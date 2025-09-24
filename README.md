@@ -1,49 +1,40 @@
-Fides Recovery Hub
-Una piattaforma demo per la gestione e il monitoraggio dei crediti insoluti. Questa applicazione presenta una dashboard moderna e reattiva che simula un sistema aziendale per il recupero crediti, mettendo in mostra le mie competenze nello sviluppo di interfacce utente complesse con tecnologie all'avanguardia.
+# Fides Recovery Hub
 
-Funzionalità Principali
-Dashboard Intuitiva: Visualizzazione in tempo reale delle metriche chiave del portfolio, come l'importo totale dei crediti attivi, il tasso di recupero e i casi critici che richiedono attenzione immediata.
+Demo della piattaforma di gestione recupero crediti sviluppata con **React + TypeScript + TailwindCSS 3**.
 
-Design Professionale: L'interfaccia utente è caratterizzata da uno stile Glassmorphism elegante, icone dinamiche e un tema scuro che migliora la leggibilità.
+---
 
-Gestione Dati Avanzata: L'applicazione include funzionalità complete di ricerca per debitore, filtro per fase di recupero e ordinamento dinamico per importo residuo o giorni scaduti, permettendo una gestione efficiente dei casi.
+## 🖥️ Anteprima
 
-Visualizzazione Dettagliata: Ogni record di debito mostra informazioni essenziali e visualizza dinamicamente il livello di rischio e la fase di recupero del credito.
+![Fides Recovery Hub Preview](/Snapshot.png)  
+*(Screenshot della dashboard preso dalla cartella `public`)*
 
-Tecnologie Utilizzate
-Questo progetto è stato realizzato con un'architettura moderna e un set di strumenti robusto per garantire velocità e scalabilità.
+---
 
-React: Una libreria JavaScript per la costruzione dell'interfaccia utente, che garantisce componenti riutilizzabili e un'esperienza utente dinamica.
+## ⚡ Caratteristiche
 
-TypeScript: Un superset di JavaScript che aggiunge tipizzazione statica per rendere il codice più robusto, prevedibile e facile da manutenere.
+- Dashboard moderna con statistiche chiave: portfolio totale, tasso di recupero, casi critici, media giorni scaduti
+- Filtri per stage di recupero crediti
+- Ricerca per debitore o ID pratica
+- Badge dinamici per rischio e stato recupero
+- Interfaccia reattiva e animata con TailwindCSS
 
-Tailwind CSS: Un framework CSS che permette uno styling rapido e altamente personalizzabile direttamente nel markup HTML, riducendo la necessità di scrivere CSS personalizzato.
+---
 
-Lucide React: Una raccolta di icone moderna e leggera utilizzata per i componenti visivi.
+## 🛠️ Tecnologie
 
-Vite: Un moderno strumento di build per un ambiente di sviluppo estremamente rapido, offrendo hot-reloading istantaneo e un bundle ottimizzato.
+- **React 19 + TypeScript**
+- **TailwindCSS 3**
+- **Vite**
+- **Lucide Icons** per le icone
+- **ESLint** + **TypeScript ESLint** per la qualità del codice
 
-Come Avviare il Progetto in Locale
-Per eseguire la demo sul tuo computer, segui questi semplici passaggi. Assicurati di avere Node.js installato.
+---
 
-Clona la repository:
+## 🚀 Setup locale
 
-Bash
+1. Clona la repo:
 
-git clone https://github.com/Darkmindy/fides-recovery-hub.git
-Naviga nella cartella del progetto:
-
-Bash
-
+```bash
+git clone https://github.com/<tuo-username>/fides-recovery-hub.git
 cd fides-recovery-hub
-Installa tutte le dipendenze:
-
-Bash
-
-npm install
-Avvia il server di sviluppo:
-
-Bash
-
-npm run dev
-Ora il tuo browser si aprirà con la demo in esecuzione su http://localhost:5173.
