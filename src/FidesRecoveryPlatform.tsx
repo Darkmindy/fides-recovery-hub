@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState } from 'react';
 import { 
   Banknote, 
   TrendingDown, 
@@ -7,10 +7,8 @@ import {
   Building2, 
   Phone, 
   Mail, 
-  Calendar,
   Search,
   ArrowUpRight,
-  ArrowDownRight,
   Zap,
   Shield,
   Users2,
@@ -34,7 +32,7 @@ interface DebtRecord {
 }
 
 const FidesRecoveryPlatform = () => {
-  const [debts, setDebts] = useState<DebtRecord[]>([
+  const [debts] = useState<DebtRecord[]>([
     { id: 'FID-2025-001', debtor: 'Mediterraneo Logistics SRL', originalAmount: 45000, remainingAmount: 45000, daysPastDue: 15, riskLevel: 'medium', lastContact: '2025-09-20', contactMethod: 'phone', recoveryStage: 'early', assignedAgent: 'Marco Rossi' },
     { id: 'FID-2025-002', debtor: 'Sicilian Trade Export', originalAmount: 78500, remainingAmount: 62800, daysPastDue: 85, riskLevel: 'high', lastContact: '2025-09-10', contactMethod: 'email', recoveryStage: 'formal', assignedAgent: 'Anna Bianchi' },
     { id: 'FID-2025-003', debtor: 'Innovazione Digitale SpA', originalAmount: 32000, remainingAmount: 32000, daysPastDue: 7, riskLevel: 'low', lastContact: '2025-09-22', contactMethod: 'email', recoveryStage: 'early', assignedAgent: 'Giuseppe Verde' },
