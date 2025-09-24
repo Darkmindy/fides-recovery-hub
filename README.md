@@ -1,75 +1,49 @@
-# React + TypeScript + Vite
+Fides Recovery Hub
+Una piattaforma demo per la gestione e il monitoraggio dei crediti insoluti. Questa applicazione presenta una dashboard moderna e reattiva che simula un sistema aziendale per il recupero crediti, mettendo in mostra le mie competenze nello sviluppo di interfacce utente complesse con tecnologie all'avanguardia.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Funzionalità Principali
+Dashboard Intuitiva: Visualizzazione in tempo reale delle metriche chiave del portfolio, come l'importo totale dei crediti attivi, il tasso di recupero e i casi critici che richiedono attenzione immediata.
 
-Currently, two official plugins are available:
+Design Professionale: L'interfaccia utente è caratterizzata da uno stile Glassmorphism elegante, icone dinamiche e un tema scuro che migliora la leggibilità.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Gestione Dati Avanzata: L'applicazione include funzionalità complete di ricerca per debitore, filtro per fase di recupero e ordinamento dinamico per importo residuo o giorni scaduti, permettendo una gestione efficiente dei casi.
 
-## React Compiler
+Visualizzazione Dettagliata: Ogni record di debito mostra informazioni essenziali e visualizza dinamicamente il livello di rischio e la fase di recupero del credito.
 
-The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
+Tecnologie Utilizzate
+Questo progetto è stato realizzato con un'architettura moderna e un set di strumenti robusto per garantire velocità e scalabilità.
 
-Note: This will impact Vite dev & build performances.
+React: Una libreria JavaScript per la costruzione dell'interfaccia utente, che garantisce componenti riutilizzabili e un'esperienza utente dinamica.
 
-## Expanding the ESLint configuration
+TypeScript: Un superset di JavaScript che aggiunge tipizzazione statica per rendere il codice più robusto, prevedibile e facile da manutenere.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+Tailwind CSS: Un framework CSS che permette uno styling rapido e altamente personalizzabile direttamente nel markup HTML, riducendo la necessità di scrivere CSS personalizzato.
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+Lucide React: Una raccolta di icone moderna e leggera utilizzata per i componenti visivi.
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+Vite: Un moderno strumento di build per un ambiente di sviluppo estremamente rapido, offrendo hot-reloading istantaneo e un bundle ottimizzato.
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+Come Avviare il Progetto in Locale
+Per eseguire la demo sul tuo computer, segui questi semplici passaggi. Assicurati di avere Node.js installato.
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+Clona la repository:
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+Bash
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+git clone https://github.com/Darkmindy/fides-recovery-hub.git
+Naviga nella cartella del progetto:
+
+Bash
+
+cd fides-recovery-hub
+Installa tutte le dipendenze:
+
+Bash
+
+npm install
+Avvia il server di sviluppo:
+
+Bash
+
+npm run dev
+Ora il tuo browser si aprirà con la demo in esecuzione su http://localhost:5173.
