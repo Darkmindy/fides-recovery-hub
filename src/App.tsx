@@ -1,9 +1,7 @@
-import FidesRecoveryPlatform from "./FidesRecoveryPlatform";
+import FidesRecoveryPlatform from './FidesRecoveryPlatform'
 
 function App() {
-  return (
-    <FidesRecoveryPlatform />
-  );
+  return <FidesRecoveryPlatform />
 }
 
-export default App;
+export default App
